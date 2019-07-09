@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>实验五 Cookie</title>
+	<link rel="icon" href="img/x.ico" type="img/x-ico">
+	<link rel="stylesheet" type="text/css" href="web.css">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="web.js"></script>
+</head>
+<body>
+	<div id="to-do">
+      <div class="navigation_bar">
+      <h1 class="navigation_title">备忘录</h1>
+      <img src="img/add.jpg" class="navigation_a1" />
+      <img src="img/menu.jpg" class="navigation_a2" />
+      </div>
+    <div>
+      <div class="left_menu">
+        <h1 class="menu_title">备忘录清单</h1>
+        <center>
+        	
+        	<ul id="note_ul">
+        	<li id="add" class="Add_div">
+        	<a class="Add"> + 添 加 新 的 ..</a>
+        	</li>
+
+        	<li class='note'>
+        		<input type="checkbox" name="items" class="check_box">
+        		<a class='note_a'>123</a>
+        		<a class='note_content'>uiyo</a>
+        	</li>
+    		</ul>
+
+    		<button class="menu_all" onClick="select_all()">全选</button>
+    		<button class="menu_delete" onClick="select_delete()">删除</button>
+    	</center>
+
+      </div>
+    <div class="input_area">
+    	<div class="text_area1">
+    	  <h3>标题</h3>
+    	  <input class="title_text" id="tt" type="text" name="title"  	placeholder="请输入标题..."/>
+    	</div>
+    	<div class="text_area2">
+    	  <h3>内容</h3>
+    	  <textarea class="content_text" id="ct" type="text" name="content"	  placeholder="请输入内容..."></textarea>
+    	</div>
+    	<div>
+    	  <button class="save" onclick="save_button()">保存</button>
+    	  <button class="empty" onClick="empty_button()">清空</button> 
+    	  <button class="change" onClick="change_button()">修改</button>
+    	  <button class="delete" onClick="delete_button()">删除</button>
+    	</div>
+    </div>
+    </div>
+    </div>
+
+   
+  
+        
+
+</body>
+</html>

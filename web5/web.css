@@ -1,0 +1,272 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+  background-image: url("img/1.jpg");
+  background-size: 100%;
+}
+ul{
+  padding: 0px;
+}
+li{
+  list-style: none;
+}
+a{
+  cursor: pointer;
+}
+h3{
+  margin-right: 50px;
+  font-size: 1.5em;
+}
+/*顶部栏*/
+.navigation_bar { 
+  background-color: #00000033;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+/*顶部栏按钮*/
+.navigation_a1 {
+  color: white;
+  position: absolute;
+  right: 10%;
+  top: 17px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.navigation_a2{
+  color: white;
+  position: absolute;
+  right: 5%;
+  top: 17px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+/*顶部栏标题*/
+.navigation_title{
+  color: white;
+  margin: 10px 10px 10px 5%;
+}
+/*侧边栏*/
+.left_menu {
+  float: left;
+  display: inline-block;
+  top: 60px;
+  background-color: #d7e5ee6b;
+  height: 100%;
+  width: 15%;
+  position: absolute;
+}
+/*侧边栏标题*/
+.menu_title {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+/*侧边栏添加按钮*/
+.Add{
+  color: #6dc8d4;
+}
+.Add:hover{
+  color: #25c2f7;
+}
+.Add_div {
+  background-color: white;
+  height: 30px;
+  width: 115px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+.Add_div:hover{
+  background-color: #e0edf3;
+}
+/*输入区域*/
+.input_area{
+  color: white;
+  position: relative;
+  top: 60px;
+  display: inline-block;
+  left: 15%;
+  width: 85%;
+}
+/*标题框*/
+.text_area1{
+  display: flex;
+  padding: 35px 50px 0px 50px;
+}
+/*内容框*/
+.text_area2{
+  display: flex;
+  padding: 5px 50px 40px 50px;
+}
+/*标题输入框*/
+.title_text{
+  height: 30px;
+  margin-top: 19px;
+  width: 85%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;  
+  font-size: 1.2em;
+  font-family: monospace;
+}
+/*内容输入框*/
+.content_text{
+  height: 160px;
+  margin-top: 19px;
+  width: 85%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 1.3em;
+  font-family: inherit;
+}
+/*清空按钮*/
+.empty{
+  right: 25%;
+   position: absolute;
+  width: 90px;
+  height: 35px;
+  background: #1E90FF;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-radius: 3px; 
+}
+.empty:hover{
+  background: #0e87fd; 
+}
+/*修改按钮*/
+.change{
+  right: 25%;
+   position: absolute;
+  width: 90px;
+  height: 35px;
+  background: #1E90FF;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-radius: 3px; 
+  display: none;
+}
+.change:hover{
+  background: #0e87fd; 
+}
+/*保存按钮*/
+.save{
+  right: 15%;
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  background: #f74848;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-radius: 3px; 
+}
+.save:hover{
+  background: #fb3333;
+}
+/*删除按钮*/
+.delete{
+  right: 15%;
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  background: #f74848;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-radius: 3px; 
+  display: none;
+}
+.delete:hover{
+  background: #fb3333;
+}
+/*待办事项摘要*/
+.note {
+  background: #ffffff91;
+  border-radius: 10px;
+  height: 50px;
+  width: 80%;
+  margin-top: 20px;
+  padding-top: 25px;
+}
+.note_a{
+  text-decoration: none;
+}
+/*被选中时的待办事项摘要*/
+.selected{
+  font-weight:bold;
+  background: #7eb2f2;
+  color:#fff;
+}
+/*被选中时的添加按钮*/
+.selected_add{
+  font-weight:bold;
+  background: #7eb2f2;
+  color: white;
+}
+/*待办事项内容*/
+.note_content{
+  display: none;
+}
+/*选择框*/
+.check_box{
+  position: absolute;
+  left: 40px;
+  height: 15px;
+  width: 15px;
+}
+/*全选按钮*/
+.menu_all{
+  width: 70px;
+  height: 35px;
+  background: #1E90FF;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-radius: 3px; 
+}
+.menu_all:hover{
+  background: #0e87fd;
+}
+/*侧边栏删除按钮*/
+.menu_delete{
+  width: 70px;
+  height: 35px;
+  background: #f74848;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-radius: 3px; 
+}
+.menu_delete:hover{
+  background: #fb3333;
+}
