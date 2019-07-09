@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web笔记</title>
+	<link rel="icon" href="img/favicon.ico" type="img/x-ico" />
+	<link rel="stylesheet" type="text/css" href="web.css">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="web2.js"></script>
+</head>
+<body>
+	<div class="menu">
+		<div id="contain" style="width: 100px">
+		<ul id="container">
+			<li><a href="web1.html"><img src="img/HOME.png" style="height: 30px;margin-top: 30px;" ></a><p>HOME</p></li>
+			<li><a href="web2.html"><img src="img/HTML.png" style="height: 35px;margin-top: 25px;" ></a><p>HTML</p></li>
+			<li><a href="web3.html"><img src="img/CSS.png" style="height: 35px;margin-top: 25px;" ></a><p>CSS</p></li>
+			<li><a href="web4.html"><img src="img/JS.png" style="height: 35px;margin-top: 25px;" ></a><p>Java Script</p></li>
+		</ul>		
+		</div>
+	</div>
+	<div class="heading">
+		<div class="menu_a">
+			<a id="img1"><img src="img/a.png" style="height: 50px;width: 50px;padding: 25px;"></a>
+		</div>
+	<div class="logo">
+		<div style="float: left;">
+		<h1 class="head_h1">Web Learning</h1>
+		<h3 style="margin: 0px 20px;">design by Will</h3>
+		</div>
+		<a href="javascript :;" onClick="javascript :history.back(-1);" id="back">返回上一页</a>
+	</div>
+	</div>
+	<div class="frame">
+		<h1 style="text-align: center;padding-top: 60px;font-size: 3em;">HTML标签</h1>
+		<table style="padding: 10px 100px 100px 100px;" >
+			<tbody>
+				<tr>
+					<th style="width: 150px">标签</th>
+					<th style="width: 710px">描述</th>
+				</tr>
+				<tr>
+					<td><a id="a_title">&lt;title&gt;</a></td>
+					<td>定义文档标题</td>
+				</tr>
+				<tr>
+					<td><a id="a_p">&lt;p&gt;</a></td>
+					<td>定义段落。</td>
+				</tr>
+				<tr>
+					<td><a id="a_br">&lt;br&gt;</a></td>
+					<td>定义简单的折行。</td>
+				</tr>
+				<tr>
+					<td><a id="a_hr">&lt;hr&gt;</a></td>
+					<td>定义简单的水平线。</td>
+				</tr>
+				<tr>
+					<td><a id="a_a">&lt;a&gt;</a></td>
+					<td>定义锚。</td>
+				</tr>
+				<tr>
+					<td><a id="a_img">&lt;img&gt;</a></td>
+					<td>定义图片。</td>
+				</tr>
+				<tr>
+					<td><a id="a_ul">&lt;ul&gt;</a></td>
+					<td>定义无序列表。</td>
+				</tr>
+				<tr>
+					<td><a id="a_ol">&lt;ol&gt;</a></td>
+					<td>定义有序列表。</td>
+				</tr>
+				<tr>
+					<td><a id="a_meta">&lt;meta&gt;</a></td>
+					<td>网页元数据</td>
+				</tr>
+				<tr>
+					<td><a id="a_table">&lt;table&gt;</a></td>
+					<td>定义表格</td>
+				</tr>
+				<tr>
+					<td><a id="a_tr">&lt;tr&gt;</a></td>
+					<td>定义表格中的行。</td>
+				</tr>
+				<tr>
+					<td><a id="a_td">&lt;td&gt;</a></td>
+					<td>定义表格中的单元。</td>
+				</tr>
+				<tr>
+					<td><a id="a_th">&lt;th&gt;</a></td>
+					<td>定义表格中的表头单元格。</td>
+				</tr>
+				<tr>
+					<td><a id="a_caption">&lt;caption&gt;</a></td>
+					<td>定义表格标题。</td>
+				</tr>
+				<tr>
+					<td><a id="a_dl">&lt;dl&gt;</a></td>
+					<td>定义列表。</td>
+				</tr>
+				<tr>
+					<td><a id="a_dd">&lt;dd&gt;</a></td>
+					<td>定义列表中项目的描述。</td>
+				</tr>
+				<tr>
+					<td><a id="a_dt">&lt;dt&gt;</a></td>
+					<td>定义列表中的项目。</td>
+				</tr>
+				<tr>
+					<td><a id="a_blockquote">&lt;blockquote&gt;</a></td>
+					<td>定义长的引用。</td>
+				</tr>
+				<tr>
+					<td><a id="a_q">&lt;q&gt;</a></td>
+					<td>定义短的引用。</td>
+				</tr>
+				<tr>
+					<td><a id="a_code">&lt;code&gt;</a></td>
+					<td>定义计算机代码文本。</td>
+				</tr>
+				<tr>
+					<td><a id="a_pre">&lt;pre&gt;</a></td>
+					<td>定义预格式文本。</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div id="maincontent">
+			<!--title标签的使用-->
+			<h1 style="padding-left: 100px" id="title">HTML &lt;title&gt; 标签</h1>
+			<div>
+			<blockquote style="margin: 0">
+			<h2>定义和用法</h2>
+			<q>&lt;title&gt; 元素可定义文档的标题。</q>
+			<p>浏览器会以特殊的方式来使用标题，并且通常把它放置在浏览器窗口的标题栏或状态栏上。同样，当把文档加入用户<p></p>的链接列表或者收藏夹或书签列表时，标题将成为该文档链接的默认名称。</p>
+			</div>
+			<div>
+				<h2>实例</h2>
+				<p>一个简单的 HTML 文档，带有尽可能少的必需的标签：</p>
+				<pre>&lt;html&gt;
+ 
+  &lt;head&gt;
+    <code>&lt;title&gt;XHTML Tag Reference&lt;/title&gt;</code>
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    The content of the document......
+  &lt;/body&gt;
+
+&lt;/html&gt;
+				</pre>
+				</div>
+				</blockquote>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="p">HTML &lt;p&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		<p>&lt;p&gt; 标签定义段落。</p>
+		<p>p 元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。</p>
+		</div>
+		<div>
+		<h2>实例</h2>
+		<p>以下代码标记了一个段落：</p>
+		<pre>&lt;p&gt;This is some text in a very short paragraph&lt;/p&gt;</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="br">HTML &lt;br&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+			<p>&lt;br&gt; 可插入一个简单的换行符。</p>
+			<p>&lt;br&gt; 标签是空标签（意味着它没有结束标签，因此这是错误的：&lt;br&gt;&lt;/br&gt;）。在 XHTML 中，把结束标签放在开始<p></p>标签中，也就是 &lt;br /&gt;。</p>
+			<p>请注意，&lt;br&gt; 标签只是简单地开始新的一行，而当浏览器遇到 &lt;p&gt; 标签时，通常会在相邻的段落之间插入一些垂直的间距。</p>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="hr">HTML &lt;hr&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+			<p>&lt;hr&gt; 标签在 HTML 页面中创建一条水平线。</p>
+			<p>水平分隔线（horizontal rule）可以在<em>视觉上</em>将文档分隔成各个部分。</p>
+		</div>
+		<div>
+		<h2>实例</h2>
+		<p>被水平线分隔的标题和段落：</p>
+		<pre>&lt;h1&gt;This is header 1&lt;/h1&gt;
+		<code>&lt;hr /&gt;</code>
+&lt;p&gt;This is some text&lt;/p&gt;</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="a">HTML &lt;a&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+		<p>&lt;a&gt; 标签定义超链接，用于从一张页面链接到另一张页面。</p>
+		<p>&lt;a&gt; 元素最重要的属性是 href 属性，它指示链接的目标。</p>
+		<p>在所有浏览器中，链接的默认外观是：</p>
+		<ul>
+			<li style="text-decoration: underline; color:#0000ff;">未被访问的链接带有下划线而且是蓝色的</li>
+		<li style="text-decoration: underline; color:purple;">已被访问的链接带有下划线而且是紫色的</li>
+		<li style="text-decoration: underline; color:red;">活动链接带有下划线而且是红色的</li>
+		</ul>
+		<p class="tip"><span>提示：</span>您可能已经注意到了，W3School 站点内的链接外观与默认的链接外观非常不同。您可以使用 <a href="/css/css_pseudo_classes.asp" title="CSS 伪类 (Pseudo-classes)">CSS 伪类</a><p></p> 向文本超链接添加复杂而多样的样式。</p>
+		</div>
+		<div>
+			<h2>实例</h2>
+			<p>指向 w3school 的超链接：</p>
+			<pre>&lt;a href="http://www.w3school.com.cn"&gt;W3School&lt;/a&gt;</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="img">HTML &lt;img&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		<p>img 元素向网页中嵌入一幅图像。</p>
+		<p>请注意，从技术上讲，&lt;img&gt; 标签并不会在网页中插入图像，而是从网页上链接图像。&lt;img&gt; 标签创建的是被<p></p>引用图像的占位空间。</p>
+		<p>&lt;img&gt; 标签有两个必需的属性：src 属性 和 alt 属性。</p>
+		</div>
+		<div>
+		<h2>实例</h2>
+		<p>在下面的例子中，我们在页面中插入一幅 W3School 的工程师在上海鲜花港拍摄的郁金香照片：</p>
+		<pre>&lt;img <code>src="/i/eg_tulip.jpg"</code>  alt="上海鲜花港 - 郁金香" /&gt;</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="ul">HTML &lt;ul&gt; 标签</h1>
+		<div>
+			<h2>实例</h2>
+		<p>无序 HTML 列表：</p>
+		<pre><code>&lt;ul&gt;</code>
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+<code>&lt;/ul&gt;</code>
+</pre>
+</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="ol">HTML &lt;ol&gt; 标签</h1>
+		<div>
+			<h2>实例</h2>
+			<p>有序 HTML 列表：</p>
+			<pre><code>&lt;ol&gt;</code>
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+<code>&lt;/ol&gt;</code>
+</pre>
+</div>
+			<h1 style="padding-left: 100px;padding-top: 100px" id="meta">HTML&lt;meta&gt;标签</h1>
+			<div>
+				<h2>定义和用法</h2>
+				<p>&lt;meta&gt; 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。</p>				
+				<p>&lt;meta&gt; 标签位于文档的头部，不包含任何内容。&lt;meta&gt; 标签的属性定义了与文档相关联的名称/值对。</p>
+			</div>
+			<div>
+				<h2>可选的属性</h2>
+				
+				<table class="dataintable" style="width: 80%;">
+				<tbody><tr>
+				<th style="width:20%;">属性</th>
+				<th style="width:30%;">值</th>
+				<th style="width:60%;">描述</th>
+				</tr>
+				
+				<tr>
+				<td><a href="#meta_prop_http-equiv">http-equiv</a></td>
+				<td>
+				<ul>
+				<li>content-type</li>
+				<li>expires</li>
+				<li>refresh</li>
+				<li>set-cookie</li>
+				</ul>
+				</td>
+				<td>把 content 属性关联到 HTTP 头部。</td>
+				</tr>
+				
+				<tr>
+				<td><a href="#meta_prop_name">name</a></td>
+				<td>
+				<ul>
+				<li>author</li>
+				<li>description</li>
+				<li>keywords</li>
+				<li>generator</li>
+				<li>revised</li>
+				<li>others</li>
+				</ul>
+				</td>
+				<td>把 content 属性关联到一个名称。</td>
+				</tr>
+				
+				<tr>
+				<td><a href="#meta_prop_scheme">scheme</a></td>
+				<td>some_text</td>
+				<td>定义用于翻译 content 属性值的格式。</td>
+				</tr>
+				</tbody></table>
+			</div>
+			<h1 style="padding-left: 100px;padding-top: 100px" id="table">HTML&lt;table&gt;标签</h1>
+			<div>
+			<h2>定义和用法</h2>
+			<p>&lt;table&gt; 标签定义 HTML 表格。</p>
+			<p>简单的 HTML 表格由 table 元素以及一个或多个 tr、th 或 td 元素组成。</p>
+			<p>tr 元素定义表格行，th 元素定义表头，td 元素定义表格单元。</p>
+			<p>更复杂的 HTML 表格也可能包括 caption、col、colgroup、thead、tfoot 以及 tbody 元素。</p>
+			</div>
+			<div>
+				<h2>实例</h2>
+				<p>一个简单的 HTML 表格，包含两行两列：</p>
+				<pre><code>&lt;table border="1"&gt;</code>
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+<code>&lt;/table&gt;</code>
+				</pre>
+			</div>
+			<h1 style="padding-left: 100px;padding-top: 100px" id="tr">HTML &lt;tr&gt; 标签</h1>
+			<div>
+				<h2>定义和用法</h2>
+				<p>&lt;tr&gt; 标签定义 HTML 表格中的行。</p>
+				<p>tr 元素包含一个或多个 <a href="/tags/tag_th.asp" title="HTML <th> 标签">th</a> 或 <a href="/tags/tag_td.asp" title="HTML <td> 标签">td</a> 元素。</p>
+				</div>
+			<div>
+				<h2>实例</h2>
+				<p>一个简单的 HTML 表格，包含两行两列：</p>
+				<pre>&lt;table border="1"&gt;
+  <code>&lt;tr&gt;</code>
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  <code>&lt;/tr&gt;</code>
+  <code>&lt;tr&gt;</code>
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  <code>&lt;/tr&gt;</code>
+&lt;/table&gt;
+</pre>
+</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="td">HTML &lt;td&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		
+		<p>&lt;td&gt; 标签定义 HTML 表格中的标准单元格。</p>
+		<p>HTML 表格有两类单元格：</p>
+		
+		<ul>
+		<li>表头单元 - 包含头部信息（由 th 元素创建）</li>
+		<li>标准单元 - 包含数据（由 td 元素创建）</li>
+		</ul>
+		
+		<p>td 元素中的文本一般显示为正常字体且左对齐。</p>
+		</div>
+		<div>
+<h2>实例</h2>
+
+<p>一个简单的 HTML 表格，包含两行两列：</p>
+
+<pre>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    <code>&lt;td&gt;January&lt;/td&gt;</code>
+    <code>&lt;td&gt;$100&lt;/td&gt;</code>
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+		</div>
+
+
+		<h1 style="padding-left: 100px;padding-top: 100px" id="th">HTML &lt;th&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		
+		<p>定义表格内的表头单元格。</p>
+		
+		<p>HTML 表单中有两种类型的单元格：</p>
+		
+		<ul>
+		<li>表头单元格 - 包含表头信息（由 th 元素创建）</li>
+		<li>标准单元格 - 包含数据（由 td 元素创建）</li>
+		</ul>
+		
+		<p>th 元素内部的文本通常会呈现为居中的粗体文本，而 td 元素内的文本通常是左对齐的普通文本。</p>
+		</div>
+		<div>
+			<h2>实例</h2>
+			<p>普通的 HTML 表格，包含两行两列：</p>
+		<pre>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    <code>&lt;th&gt;Company&lt;/th&gt;</code>
+    <code>&lt;th&gt;Address&lt;/th&gt;</code>
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td&gt;Apple, Inc.&lt;/td&gt;
+    &lt;td&gt;1 Infinite Loop Cupertino, CA 95014&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+		</div>
+
+
+		<h1 style="padding-left: 100px;padding-top: 100px" id="caption">HTML &lt;caption&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+			<p>caption 元素定义表格标题。</p>
+			<p>caption 标签必须紧随 table 标签之后。您只能对每个表格定义一个标题。通常这个标题会被居中于表格之上。</p>
+		</div>
+
+		<div>
+			<h2>实例</h2>
+			<pre>&lt;table border="1"&gt;
+  <code>&lt;caption&gt;Monthly savings&lt;/caption&gt;</code>
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+		</div>
+
+
+		<h1 style="padding-left: 100px;padding-top: 100px" id="dl">HTML &lt;dl&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+			<p>&lt;dl&gt; 标签定义了定义列表（definition list）。</p>
+			<p>&lt;dl&gt; 标签用于结合 <a href="/tags/tag_dt.asp" title="HTML <dt> 标签">&lt;dt&gt;</a> （定义列表中的项目）和 <a href="/tags/tag_dd.asp" title="HTML <dd> 标签">&lt;dd&gt;</a> （描述列表中的项目）。</p>
+			</div>
+			<div>
+				<h2>实例</h2>
+				<pre><code>&lt;dl&gt;</code>
+   &lt;dt&gt;计算机&lt;/dt&gt;
+   &lt;dd&gt;用来计算的仪器 ... ...&lt;/dd&gt;
+   &lt;dt&gt;显示器&lt;/dt&gt;
+   &lt;dd&gt;以视觉方式显示信息的装置 ... ...&lt;/dd&gt;
+<code>&lt;/dl&gt;</code>
+</pre>
+
+</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="dd">HTML &lt;dd&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		<p>&lt;dd&gt; 在定义列表中定义条目的定义部分。</p>
+		</div>
+		<div>
+			<h2>实例</h2>
+			<pre>&lt;dl&gt;
+   &lt;dt&gt;计算机&lt;/dt&gt;
+   <code>&lt;dd&gt;用来计算的仪器 ... ...&lt;/dd&gt;</code>
+   &lt;dt&gt;显示器&lt;/dt&gt;
+   <code>&lt;dd&gt;以视觉方式显示信息的装置 ... ...&lt;/dd&gt;</code>
+&lt;/dl&gt;
+</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="dt">HTML &lt;dt&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		<p>&lt;dt&gt; 标签定义了定义列表中的项目（即术语部分）。</p>
+		</div>
+		<div>
+			<h2>实例</h2>
+			<pre>&lt;dl&gt;
+   <code>&lt;dt&gt;计算机&lt;/dt&gt;</code>
+   &lt;dd&gt;用来计算的仪器 ... ...&lt;/dd&gt;
+   <code>&lt;dt&gt;显示器&lt;/dt&gt;</code>
+   &lt;dd&gt;以视觉方式显示信息的装置 ... ...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="blockquote">HTML &lt;blockquote&gt; 标签</h1>
+		<div>
+		<h2>定义和用法</h2>
+		<p>&lt;blockquote&gt; 标签定义块引用。</p>
+		<p>&lt;blockquote&gt; 与 &lt;/blockquote&gt; 之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进</p><p>（增加外边距），而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。</p>
+		</div>
+		<div>
+			<h2>实例</h2>
+			<p>标记长的引用：</p>
+			<pre><code>&lt;blockquote&gt;</code>
+Here is a long quotation here is a long quotation here is a long quotation 
+here is a long quotation here is a long quotation here is a long quotation 
+here is a long quotation here is a long quotation here is a long quotation.
+<code>&lt;/blockquote&gt;</code>
+</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="q">HTML &lt;q&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+			<p>&lt;q&gt; 标签定义短的引用。</p>
+			<p>浏览器经常在引用的内容周围添加引号。</p>
+		</div>
+		<div>
+			<h2>实例</h2>
+			<p>标记短的引用：</p>
+			<pre><code>&lt;q&gt;</code>Here is a short quotation here is a short quotation<code>&lt;/q&gt;</code>
+</pre>
+		</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="code">HTML &lt;code&gt; 标签</h1>
+		<div>
+			<h2>定义和用法</h2>
+			<p><strong>以下元素都是短语元素。虽然这些标签定义的文本大多会呈现出特殊的样式，但实际上，这些标签都拥有确切的语义。</strong></p>
+			<p><strong>我们并不反对使用它们，但是如果您只是为了达到某种视觉效果而使用这些标签的话，我们建议您使用<p>样式表，那么做会达到更加丰富的效果。</p></strong></p>
+			<table class="dataintable">
+			<tbody><tr>
+			<td><a href="/tags/tag_em.asp" title="HTML <em> 标签">&lt;em&gt;</a></td>
+			<td>把文本定义为强调的内容。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_strong.asp" title="HTML <strong> 标签">&lt;strong&gt;</a></td>
+			<td>把文本定义为语气<em>更强</em>的强调的内容。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_dfn.asp" title="HTML <dfn> 标签">&lt;dfn&gt;</a></td>
+			<td>定义一个定义项目。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_code.asp" title="HTML <code> 标签">&lt;code&gt;</a></td>
+			<td>定义计算机代码文本。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_samp.asp" title="HTML <samp> 标签">&lt;samp&gt;</a></td>
+			<td>定义样本文本。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_kbd.asp" title="HTML <kbd> 标签">&lt;kbd&gt;</a></td>
+			<td>定义键盘文本。它表示文本是从键盘上键入的。它经常用在与计算机相关的文档或手册中。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_var.asp" title="HTML <var> 标签">&lt;var&gt;</a></td>
+			<td>定义变量。您可以将此标签与 &lt;pre&gt; 及 &lt;code&gt; 标签配合使用。</td>
+			</tr>
+			
+			<tr>
+			<td><a href="/tags/tag_cite.asp" title="HTML <cite> 标签">&lt;cite&gt;</a></td>
+			<td>定义引用。可使用该标签对参考文献的引用进行定义，比如书籍或杂志的标题。</td>
+			</tr>
+			</tbody></table>
+			</div>
+		<h1 style="padding-left: 100px;padding-top: 100px" id="pre">HTML &lt;pre&gt; 标签</h1>
+		<div style="height: 1300px">
+		<h2>定义和用法</h2>
+		<p>pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</p>
+		<p>&lt;pre&gt; 标签的一个常见应用就是用来表示计算机的源代码。</p>
+		<p>可以导致段落断开的标签（例如标题、<a href="tag_p.asp" title="HTML <p> 标签">&lt;p&gt;</a> 和 <a href="tag_address.asp" title="HTML <address> 标签">&lt;address&gt; 标签</a>）<em>绝不能</em>包含在 &lt;pre&gt; 所定义的块里。尽管有些浏</p><p>览器会把段落结束标签解释为简单地换行，但是这种行为在所有浏览器上并不都是一样的。</p>
+		<p>pre 元素中允许的文本可以包括<a href="/html/html_style.asp" title="HTML 教程延伸阅读：改变文本的外观和含义">物理样式和基于内容的样式变化</a>，还有<a href="/tags/tag_a.asp" title="HTML <a> 标签">链接</a>、<a href="/tags/tag_img.asp" title="HTML <img> 标签">图像</a>和<a href="/tags/tag_hr.asp" title="HTML <hr> 标签">水平分隔线</a>。当把其他标签（比</p><p>如 &lt;a&gt; 标签）放到 &lt;pre&gt; 块中时，就像放在 HTML/XHTML 文档的其他部分中一样即可。请看下面的例子：</p>
+		<pre>&lt;pre&gt;
+&amp;lt;html&amp;gt;
+
+&amp;lt;head&amp;gt;
+  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;loadxmldoc.js&amp;quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+  &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    xmlDoc=<code>&lt;a href="dom_loadxmldoc.asp"&gt;loadXMLDoc&lt;/a&gt;</code>(&amp;quot;books.xml&amp;quot;);
+    document.write(&amp;quot;xmlDoc is loaded, ready for use&amp;quot;);
+  &amp;lt;/script&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+</pre>
+<p>在上面的代码中，&lt;pre&gt; 标签中的特殊符号被转换为<a href="/html/html_entities.asp" title="HTML 字符实体">符号实体</a>，比如 "&amp;lt;" 代表 "&lt;"，"&amp;gt;" 代表 "&gt;"。另外，请</p><p>注意蓝色的代码，我们在 &lt;pre&gt; 标签中使用了链接，也就是 &lt;a&gt; 标签。上面这段代码的显示效果如下：</p>
+
+<pre>&lt;html&gt;
+
+&lt;head&gt;
+  &lt;script type="text/javascript" src="loadxmldoc.js"&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;script type="text/javascript"&gt;
+    xmlDoc=<a href="/xmldom/dom_loadxmldoc.asp">loadXMLDoc</a>("books.xml");
+    document.write("xmlDoc is loaded, ready for use");
+  &lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+</div>
+
+		</div>
+	</div>
+	</div>
+</body>
+</html>

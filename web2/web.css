@@ -1,0 +1,139 @@
+body{
+	background-color:#8bb1c3;
+	margin: 0;
+}
+ul#container li{
+	list-style: none;
+	text-align: center;
+}
+li > p{
+	margin: 0;
+	font-size: 0.8em;
+}
+td a{
+	text-decoration:none;
+	color: blue;
+}
+td a:hover{
+	color: #d52828;
+	cursor: pointer;
+}
+li:hover{
+	background-color: white;
+	cursor: pointer;
+}
+th {
+    vertical-align: baseline;
+    padding: 5px 15px 5px 6px;
+    background-color: #3F3F3F;
+    border: 1px solid #3F3F3F;
+    text-align: left;
+    color: #fff;
+}
+td {
+    vertical-align: text-top;
+    padding: 6px 15px 6px 6px;
+    border: 1px solid #aaa;
+}
+ul {
+	padding:0;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+div#maincontent div {
+	padding-left: 100px;
+}
+div#maincontent h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #3f3f3f;
+}
+div#maincontent p {
+    margin: 20px 0 0 0;
+    line-height: 150%;
+}
+ul > li{
+	text-align: left;
+	list-style: none;
+}
+pre {
+    width: 765px;
+    margin: 15px 0 0 0;
+    padding: 20px;
+    border: 1px dotted #785;
+    background: #f5f5f5;
+    font-family: Consolas;
+}
+pre code {
+    color: #0000dd;
+    font-family: Consolas;
+}
+ul#container li{
+	height: 100px;
+}
+.menu{
+	background-color: beige;
+	display: inline-block;
+	height: 100%;
+	position: fixed;
+	background-color: #ded4d4;
+	top: 100px;
+}
+.heading{
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	display: inline-block;
+}
+.logo{
+	width: 30%;
+	margin-left:150px;
+	height: 100px;
+	display: inline-block;
+}
+.head_h1{
+	font-size: 3em;
+	font-family: fantasy;
+	margin: 0 10px;
+	color: #797979;
+}
+#back{
+	right: 100px;
+	position: absolute;
+	top: 35px;
+	background-color: #60de69b0;
+	height: 25px;
+	text-align: center;
+	width: 100px;
+	border-radius: 50px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	outline:none;
+	text-decoration:none;
+}
+.frame{
+	margin-left: 150px;
+	width: 85%;
+	height: 100%;
+	background-color: white;
+	border-radius: 115px;
+	margin-top: 60px;
+}
+.menu_a{
+	background-color: #f7f7f7;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	position: fixed;
+	cursor: pointer;
+}
+#container{
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
