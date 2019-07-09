@@ -1,0 +1,43 @@
+<html><head>
+	<meta charset="utf-8">
+	<title>Java Script入门</title>
+	<link rel="icon" href="img/favicon.ico" type="img/x-ico">
+	<link rel="stylesheet" type="text/css" href="web.css">
+	<script type="text/javascript" src="prototype.min.js"></script>
+	<script type="text/javascript" src="web.js"></script>
+</head>
+<body>
+	<div class="container">
+	<!--输入数值并对其进行快速排序-->
+	<div class="sort_div">
+	<h2 style="text-align: center;margin-bottom: 30px;">请输入需要排序的数字，并以空格分开</h2>
+	<input id="input" type="text" placeholder="     请输入需要排序的数字" onfocus="this.placeholder=''">
+	<button class="button_up" onclick="up_sort()">升序</button>
+	<button class="button_down" onclick="down_sort()">降序</button>
+	</div>
+	<div class="out_div">
+	<h2 style="text-align: center;">输出结果</h2>
+	<textarea class="out_text" id="outtext">		
+	</textarea>
+	</div>
+	<!--展示最喜欢的电影并定时改变字体颜色-->
+	<div style="text-align: center;">	
+	<h2>最喜欢的电影</h2>
+		<div style="display: inline-block;">
+		<img src="img/1.jpg" class="img_movie">
+		<p id="p1" style="color: black;">蜘蛛侠-平行宇宙</p>
+		</div>
+		<div style="display: inline-block;">
+		<img src="img/7.jpg" class="img_movie">
+		<p id="p2" style="color: black;">奇迹男孩</p>
+		</div>
+		<div style="display: inline-block;">
+		<img src="img/9.jpg" class="img_movie">
+		<p id="p3" style="color: black;">三傻大闹宝莱坞</p>
+		</div>
+	</div>
+	<!--反序输出电影名字-->
+<button class="down_movie" onclick="down_name()">反序输出电影名字</button>
+</div>	
+</body>
+</html>

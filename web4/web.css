@@ -1,0 +1,38 @@
+#div1, #div2, #div3 {
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    height: 400px;
+    vertical-align: top;
+    border: 2px dashed #ceb8b8;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: -8px;
+}
+a{
+    text-decoration-line: none;	
+}
+td{
+	text-align: center;
+	padding-top: 20px;
+}
+th{
+	padding-top: 20px;
+}
+body{
+	background-image: url('img/4.jpg');
+	background-size: 100%;
+}
+.title{
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 0px;
+}
+.content{
+	background-color: #ffffffd1;
+	border-radius: 100px;
+	width: 1000px;
+	height: 600px;
+	margin: 100px auto;
+}
